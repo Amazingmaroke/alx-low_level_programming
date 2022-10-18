@@ -1,21 +1,25 @@
 #include "main.h"
 
 /**
- * main - program to print_putchar
- *
- * Return: 0 (Success)
+ * print_sign - prints the sign if a number
+ * @n: number from input
+ * Return: 1 prints '+' if n>0, 0 prints '0' if n=0, -1 prints '-' if n<0
  */
-int main(void)
+int print_sign(int n)
 {
-	char *c = "_putchar";
-
-	while (*c)
+	if (n > 0)
 	{
-		_putchar(*c);
-		c++;
+		_putchar('+');
+		return (1);
 	}
-
-	_putchar('\n');
-
-	return (0);
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
