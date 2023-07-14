@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point, prints file name it was compiled from
- *
- * Return: 0 (Success)
+ * main - main body
+ * Return: Returns 0
  */
 
 int main(void)
